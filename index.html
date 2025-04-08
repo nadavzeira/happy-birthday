@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <audio id="background-music" src="./music/monokrom.mp3" preload="auto">
+  <audio id="background-music" src="./music/eden.mp3" preload="auto">
   </audio>
 
   <div class="bg" id="content">
@@ -32,46 +32,103 @@
       </ul>
     </div>
 
-    <div id="slideSatu" class="animate__animated animate__slideInDown animate__slow d-none">
+    <div id="slideOne" class="animate__animated animate__slideInDown animate__slow d-none">
       <img src="./img/hbd1.png" class="img">
     </div>
 
-    <div id="slideDua"
+    <div id="slideTwo"
       class="slides d-none paper animate__zoomInDown animate__animated animate__delay-2s animate__slow">
       <div class="paper-content">
-        <p id="teks1" class="teks"></p>
+        <p id="text1" class="text"></p>
       </div>
     </div>
 
-    <div id="slideTiga" class="slides d-none paper animate__fadeInRight animate__animated">
+    <!-- <div id="slideThree" class="slides d-none paper animate__fadeInRight animate__animated">
       <div class="paper-content">
-        <p id="teks2" class="teks"></p>
+        <p id="text2" class="text"></p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="kotak d-none slides animate__animated animate__fadeInDown animate__delay-2s" id="slideEmpat">
+    <div id="slideFour" class="kotak d-none slides animate__animated animate__fadeInDown animate__delay-2s">
       <div class="row">
         <div class="col-sm mt-1">
-          <h5>Kamu suka nggak?</h5>
+          <h5>Did you love it?</h5>
         </div>
       </div>
       <div class="row mt-2">
         <div class="col-4 offset-2">
-          <button id="gak" class="btn btn-outline-danger"> Gak! </button>
+          <button id="no" class="btn btn-outline-danger"> Nah. </button>
         </div>
         <div class="col-4">
-          <button id="suka" class="btn btn-outline-info"> Suka!! </button>
+          <button id="yes" class="btn btn-outline-info"> Yes! </button>
         </div>
       </div>
     </div>
 
-    <div id="slideLima" class="d-none animate__bounceIn animate__animated animate__slow">
+    <div id="slideVideo" class="d-none animate__animated animate__fadeIn animate__delay-1s">
+      <!-- <div id="videoCarousel" class="carousel slide" data-interval="false" data-ride="false"> -->
+      <div id="videoCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="video-container">
+              <video controls>
+                <source src="videos/Or & Omri.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video controls>
+                <source src="videos/Tal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video controls>
+                <source src="videos/Tomer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video controls>
+                <source src="videos/Alona.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video controls>
+                <source src="videos/Yossi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <!-- Add more carousel-items as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <button id="continueButton" class="btn btn-primary d-none">Continue</button>
+      </div>
+    </div>
+
+    <div id="slideFive" class="d-none animate__bounceIn animate__animated animate__slow">
       <i class="fas fa-heart fa-5x text-danger"></i>
     </div>
-    <p id="trims" class="text-muted d-none mt-2"></p>
+    <p id="thanks" class="text-muted d-none mt-2"></p>
 
-    <p id="tap" class="d-none animate__animated animate__pulse text-muted animate__slow animate__repeat-3">Ketuk untuk
-      melanjutkan</p>
+    <p id="tap" class="d-none animate__animated animate__pulse text-muted animate__slow animate__repeat-3">Tap to continue</p>
     <!-- Footer -->
     <footer class="page-footer font-small blue fixed-bottom">
   <!-- Optional JavaScript -->
