@@ -22,8 +22,8 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-const countDown = new Date('Oct 22, 2023 00:00:00').getTime();
-// const countDown = new Date('Apr 09, 2025 00:15:00').getTime();
+// const countDown = new Date('Oct 22, 2023 00:00:00').getTime();
+const countDown = new Date('Apr 09, 2025 00:15:00').getTime();
 
 const x = setInterval(function () {
   let now = new Date().getTime(),
